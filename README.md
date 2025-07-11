@@ -14,5 +14,11 @@ A sleek and responsive weather forecast application built with React and styled 
 - 🕒 Last updated timestamp
 - 📱 Fully responsive layout with Tailwind CSS
 
+- ## 🔧 Tech Stack
+
+- **Frontend:** React, Tailwind CSS, React Router
+- **API:** [WeatherAPI.com](https://www.weatherapi.com/)
+- **Deployment:** Vercel 
+
 
 
