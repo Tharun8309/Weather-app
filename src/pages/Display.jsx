@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
 const Display = () => {
   const { city } = useParams();
@@ -12,7 +13,7 @@ const Display = () => {
       setLoading(true);
       setError(null);
       try {
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=9d6ac97855bf4547b3c52916250707&q=${city}`);
+        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`);
         if (!response.ok) {
           throw new Error('Failed to fetch weather data');
         }
